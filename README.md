@@ -36,8 +36,8 @@ Este repositório guarda os arquivos e prints dos **3 desafios** que eu fiz no K
 - Utilizei o Medusa para criar combinações de senhas e usuários
 - Retornaram credenciais válidas, invasão com sucesso testada no terminal smbclient.
 
-  (GB)
-  # DIO Challenge 1 - Attack tests on Kali Linux
+(GB)
+# DIO Challenge 1 - Attack tests on Kali Linux
 
 This repository stores the files and screenshots of the 3 challenges I performed on Kali Linux using brute force:
 - FTP attack
