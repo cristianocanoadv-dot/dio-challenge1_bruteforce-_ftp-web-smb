@@ -13,7 +13,6 @@ Este repositório guarda os arquivos e prints dos **3 desafios** que eu fiz no K
 - Os testes foram feitos a partir da informação do número de IP do usuário (o qual tinhámos informação)
 - Utilizei um ambiente controlado dentro do Virtual Box
 - Este repositório foi criado apenas para **estudo e aprendizado**, sem fins maliciosos
-- 
   
 ## Invasão FTP
 - Dei um comando Ping no terminal para o IP para testar a conexão com a máquina do usuário
