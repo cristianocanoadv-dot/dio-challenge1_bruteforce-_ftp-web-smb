@@ -1,3 +1,4 @@
+(BR) 
 # Desafio DIO 1 - Testes de invasão no Kali Linux
 
 Este repositório guarda os arquivos e prints dos **3 desafios** que eu fiz no Kali Linux por brute force:
@@ -34,3 +35,41 @@ Este repositório guarda os arquivos e prints dos **3 desafios** que eu fiz no K
 - Criei wordslists novamente para senhas e usuários possíveis
 - Utilizei o Medusa para criar combinações de senhas e usuários
 - Retornaram credenciais válidas, invasão com sucesso testada no terminal smbclient.
+
+  (GB)
+  # DIO Challenge 1 - Attack tests on Kali Linux
+
+This repository stores the files and screenshots of the 3 challenges I performed on Kali Linux using brute force:
+- FTP attack
+- DVWA (web) attack
+- SMB attack
+
+## Tools used: VirtualBox, Kali Linux
+
+## Important information
+- The "user" refers to Metasploitable2, an intentionally vulnerable VM created for training and testing.
+- Evidence (screenshots) is in the images/ folder.
+- The terminal command history is saved in results/terminal_history.txt.
+- The tests were performed based on knowledge of the target VM's IP address (which we had).
+- I used a controlled environment inside VirtualBox.
+- This repository was created only for study and learning purposes, with no malicious intent.
+  
+## FTP attack
+- I ran a ping command to the IP to test connectivity to the target machine.
+- I used nmap targeting the main ports for ftp, ssh, http, smb, with the -sV option to try to identify the service version for each port.
+- Then I tested FTP connectivity to the target IP and got a positive response: the port was open and a connection was possible (credentials not yet known at that moment).
+- I created two wordlists for users and passwords with common combinations (example users: user, msfadmin, nadmin, nroot; example passwords: 123456, password, npassword, etc.). (commands are in results/terminal_history.txt)
+- I used Medusa and it found a valid username/password combination for the terminal.
+- I tested the credentials and they were correct — attack successful.
+
+## WEB attack
+- I created wordlists again for possible usernames and passwords.
+- I used Medusa to try username/password combinations against the web form.
+- Valid credentials were returned — attack successful.
+
+## SMB attack + spraying
+- Ran enum4linux.
+- Used less to inspect command output and access files.
+- Created wordlists again for possible usernames and passwords.
+- Used Medusa to try username/password combinations (password spraying).
+- Valid credentials were returned — verified successfully in the terminal with smbclient.
