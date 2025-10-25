@@ -1,4 +1,4 @@
-# Desafio DIO - Testes de invasão no Kali Linux
+# Desafio DIO 1 - Testes de invasão no Kali Linux
 
 Este repositório guarda os arquivos e prints dos **3 desafios** que eu fiz no Kali Linux por brute force:
 - Invasão FTP  
@@ -8,6 +8,7 @@ Este repositório guarda os arquivos e prints dos **3 desafios** que eu fiz no K
 ## Ferramentas usadas: VirtualBox, KaliLinux
 
 ## Informações importantes
+- O "usuário" se trata do metasploitable2 uma VM intencionalmente vulnerável criada para treinamento e testes
 - As evidências (prints) estão na pasta `images/`  
 - O histórico de comandos do terminal está salvo em `results/terminal_history.txt`
 - Os testes foram feitos a partir da informação do número de IP do usuário (o qual tinhámos informação)
